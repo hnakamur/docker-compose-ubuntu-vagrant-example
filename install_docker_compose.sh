@@ -2,7 +2,7 @@
 set -e
 
 if [ ! -x /usr/local/bin/docker-compose ]; then
-  curl -L -o /usr/local/bin/docker-compose https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m`
+  curl -s -L -o /usr/local/bin/docker-compose https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m`
   chmod +x /usr/local/bin/docker-compose
 fi
 

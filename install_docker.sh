@@ -2,7 +2,7 @@
 set -e
 
 if [ ! -x /usr/local/bin/docker ]; then
-  sudo curl -L -o /usr/local/bin/docker https://get.docker.com/builds/Linux/x86_64/docker-latest
+  sudo curl -s -L -o /usr/local/bin/docker https://get.docker.com/builds/Linux/x86_64/docker-latest
   sudo chmod +x /usr/local/bin/docker
 
   cat <<'EOF' | sudo sh -c 'cat > /etc/default/docker'
