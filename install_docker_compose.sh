@@ -16,7 +16,7 @@ if [ ! -f /etc/init/docker-compose.conf ]; then
 
 description     "Docker Compose"
 
-start on (local-filesystems and net-device-up IFACE!=lo and started docker.io)
+start on (local-filesystems and net-device-up IFACE!=lo and started docker)
 stop on runlevel [!2345]
 
 respawn
